@@ -1,0 +1,9 @@
+#pragma once
+
+#define GAME_VERSION "@GAME_VERSION@"
+
+
+namespace MyVoxelGameInfo
+{
+    inline const char* GetGameVersion() { return GAME_VERSION; }
+} // namespace VoxCore

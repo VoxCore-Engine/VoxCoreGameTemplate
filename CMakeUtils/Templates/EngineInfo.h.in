@@ -1,0 +1,30 @@
+#pragma once
+
+#define ENGINE_VERSION "@ENGINE_VERSION@"
+
+
+namespace VoxCoreEngineInfo
+{
+
+    enum class BuildType
+     {
+         Debug,
+         Release,
+         Shipping,
+         Unknown
+     };
+    inline const char* GetEngineVersion() { return ENGINE_VERSION; }
+    inline BuildType GetBuildType()
+    {
+        #if defined(VOX_BUILD_DEBUG)
+            return BuildType::Debug;
+        #elif defined(VOX_BUILD_RELEASE)
+            return BuildType::Release;
+        #elif defined(VOX_BUILD_SHIPPING)
+            return BuildType::Shipping;
+        #else
+            return BuildType::Unknown;
+        #endif
+    }
+
+} // namespace VoxCore
