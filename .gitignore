@@ -1,0 +1,36 @@
+# =========================
+# CLion IDE files
+# =========================
+.idea/
+cmake-build-*/            # Any other CMake build folders
+
+# =========================
+# CMake generated files
+# =========================
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# =========================
+# Compiled object files and binaries
+# =========================
+*.o
+*.obj
+*.so
+*.exe
+*.dll
+*.a
+*.lib
+*.out
+*.pdb
+*.pyc
+
+# =========================
+# Logs, temp files, and OS-specific files
+# =========================
+*.log
+*.tmp
+*.swp
+*.DS_Store
+*.user
